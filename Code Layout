@@ -13,6 +13,19 @@ Entity Player Controls
 How to get the ability to possess a mob:
     must have the experience. checks when you go to possess
     
+    
+Planned Features:
+    (Pahimar details);
+    ~~PLAYER's body is left in the bed as an NPC
+    ~~PLAYER's 'soul' goes on to inhabit another NPC
+    ~~PLAYER would have nothing but that NPC's abilities
+    ~~Basic actions cannot speed up the night (Sleeping does nothing)
+    ~~Must spend entire night cycle as NPC
+    ~~If another PLAYER's body is inhabited nearby, there is a chance you could possess that player
+    ~~At the end of the night, you must return to your body, else you will die
+    ~~If you body is occupied, you cannot return
+    ~~The longer you stay in the NPC body, the more benefits you could get, and the harder it is to return
+    
 Full Higharchy:
     Issue) No skipping the night cycle when a player lays in a bed
     Issue) If player lays in bed, it will force the player to start 'Possession' early
