@@ -12,3 +12,12 @@ Entity Player Controls
     
 How to get the ability to possess a mob:
     must have the experience. checks when you go to possess
+    
+Full Higharchy:
+    Issue) No skipping the night cycle when a player lays in a bed
+    Issue) If player lays in bed, it will force the player to start 'Possession' early
+    Issue) Start 'Possession' at start of night cycle
+    Issue) Select random mob within X radius of player OR select random eyz coords for random mob type
+    Issue) Deny access to player's inventory stats, etc (anything using the 'e' default shortcut key, or chatting)
+    Issue) Spawn player as specified entity at specified coords
+    Issue) At end of night cycle, return player to player's body
