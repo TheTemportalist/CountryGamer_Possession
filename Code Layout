@@ -1,0 +1,14 @@
+Detect when the player is sleeping
+    TESTING: use an item-- set player asleep, enter possession state
+Get nearest mob entity
+kill mob entity
+spawn player as mob entity (Default Creeper)
+
+Entity Player Controls
+    No Morphing while away from body
+    Player model changed to that of the selected mob
+    Player gets abilities bases on the selected mob
+    Mobs around you accept that you are one of them (will not attack)
+    
+How to get the ability to possess a mob:
+    must have the experience. checks when you go to possess

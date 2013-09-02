@@ -1,5 +1,7 @@
 package mods.CountryGamer_Possession.Server;
 
+import mods.CountryGamer_Possession.Server.Items.ItemDebug;
+import net.minecraft.item.Item;
 import net.minecraftforge.common.Configuration;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.Mod.EventHandler;
@@ -9,6 +11,7 @@ import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import cpw.mods.fml.common.network.NetworkMod;
+import cpw.mods.fml.common.registry.LanguageRegistry;
 
 @Mod(modid = PosMain.modid, name=PosMain.name, version=PosMain.modVersion)
 @NetworkMod(clientSideRequired=true, serverSideRequired=false)
@@ -30,7 +33,8 @@ public class PosMain {
 	public static String base_Tex = PosMain.modidLower + ":";
 	// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 	/** Items */
-	
+	public static Item debugItem;
+	public static int debugItemID;
 	// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 	/** Blocks */
 	
@@ -66,7 +70,7 @@ public class PosMain {
 			;
 		config.load();
 		
-		
+		debugItemID	= config.get(itemCate,	"Debug Item",	1000).getInt();
 		
 		config.save();
 		
@@ -80,6 +84,7 @@ public class PosMain {
 		proxy.registerThings();
 		proxy.registerServerTickHandler();
 
+		items();
 		
 	}
 	@EventHandler
@@ -91,7 +96,8 @@ public class PosMain {
 		
 	}
 	public static void items() {
-		
+		debugItem = new ItemDebug(debugItemID).setUnlocalizedName("debugItem");
+		LanguageRegistry.addName(debugItem, "Debug Item");
 	}
 	public static void blocks() {
 		
