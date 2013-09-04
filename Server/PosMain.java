@@ -1,6 +1,9 @@
 package mods.CountryGamer_Possession.Server;
 
+import mods.CountryGamer_Possession.Server.Blocks.BlockBed;
 import mods.CountryGamer_Possession.Server.Items.ItemDebug;
+import net.minecraft.block.Block;
+import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 import net.minecraftforge.common.Configuration;
 import cpw.mods.fml.common.Mod;
@@ -11,6 +14,7 @@ import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import cpw.mods.fml.common.network.NetworkMod;
+import cpw.mods.fml.common.registry.GameRegistry;
 import cpw.mods.fml.common.registry.LanguageRegistry;
 
 @Mod(modid = PosMain.modid, name=PosMain.name, version=PosMain.modVersion)
@@ -37,7 +41,8 @@ public class PosMain {
 	public static int debugItemID;
 	// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 	/** Blocks */
-	
+	public static Block	bed;
+	public static int	bedID = 2000;
 	// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 	/** Armor */
 	
@@ -82,9 +87,10 @@ public class PosMain {
 	@EventHandler
 	public static void init(FMLInitializationEvent event) {
 		proxy.registerThings();
-		proxy.registerServerTickHandler();
+		proxy.registerHandler();
 
 		items();
+		blocks();
 		
 	}
 	@EventHandler
@@ -100,7 +106,11 @@ public class PosMain {
 		LanguageRegistry.addName(debugItem, "Debug Item");
 	}
 	public static void blocks() {
-		
+		bed = new BlockBed(bedID).setUnlocalizedName("bed");
+		//GameRegistry.registerBlock(bed, bed.getUnlocalizedName());
+		LanguageRegistry.addName(bed, "Bed");
+		bed.setCreativeTab(CreativeTabs.tabDecorations);
+		//Block.blocksList[Block.bed.blockID] = bed;
 	}
 	public static void craftSmelt() {
 		

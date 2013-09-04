@@ -99,7 +99,7 @@ public class BlockBed extends BlockDirectional
 
                 if (enumstatus == EnumStatus.OK)
                 {
-                    setBedOccupied(par1World, par2, par3, par4, true);
+                    //setBedOccupied(par1World, par2, par3, par4, true);
 // Start Possession                    
                     
                     return true;
@@ -109,14 +109,14 @@ public class BlockBed extends BlockDirectional
                 	// is daytime
                     if (enumstatus == EnumStatus.NOT_POSSIBLE_NOW)
                     {
-                        par5EntityPlayer.addChatMessage("tile.bed.noSleep");
+                        //par5EntityPlayer.addChatMessage("tile.bed.noSleep");
 // Start Possession
                     }
                     // mobs around
                     else if (enumstatus == EnumStatus.NOT_SAFE)
                     {
 // Start Possession?
-                        par5EntityPlayer.addChatMessage("tile.bed.notSafe");
+                        //par5EntityPlayer.addChatMessage("tile.bed.notSafe");
                     }
 
                     return true;
