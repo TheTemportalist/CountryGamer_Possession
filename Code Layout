@@ -1,4 +1,6 @@
-To simulate the player leaving their body behind, the player spawns with the morph of the selected mob, and a dummy model is placed on the bed or lying around with the players skin. When the player is morphed, they are not allowed access to their inventories and such.
+To simulate the player leaving their body behind, the player spawns with the morph of the selected mob,
+and a dummy model is placed on the bed or lying around with the players skin. When the player is morphed,
+they are not allowed access to their inventories and such.
 
 Detect when the player is sleeping
     TESTING: use an item-- set player asleep, enter possession state
