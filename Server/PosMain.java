@@ -14,7 +14,7 @@ import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import cpw.mods.fml.common.network.NetworkMod;
-import cpw.mods.fml.common.registry.GameRegistry;
+import cpw.mods.fml.common.registry.EntityRegistry;
 import cpw.mods.fml.common.registry.LanguageRegistry;
 
 @Mod(modid = PosMain.modid, name=PosMain.name, version=PosMain.modVersion)
@@ -112,6 +112,15 @@ public class PosMain {
 		bed.setCreativeTab(CreativeTabs.tabDecorations);
 		//Block.blocksList[Block.bed.blockID] = bed;
 	}
+	
+	public static void ents() {
+		EntityRegistry.registerModEntity(EntityPossess.class, "Possession", 1, PosMain.instance, 80, 3, true);
+		//EntityRegistry.addSpawn(EntityTutorial.class, 10, 2, 4, EnumCreatureType.monster, BiomeGenBase.beach, BiomeGenBase.extremeHills, BiomeGenBase.extremeHillsEdge, BiomeGenBase.forest, BiomeGenBase.forestHills, BiomeGenBase.jungle, BiomeGenBase.jungleHills, BiomeGenBase.mushroomIsland, BiomeGenBase.mushroomIslandShore, BiomeGenBase.ocean, BiomeGenBase.plains, BiomeGenBase.river, BiomeGenBase.swampland);
+		LanguageRegistry.instance().addStringLocalization("entity.Possession.Tutorial.name", "");
+		
+		
+	}
+	
 	public static void craftSmelt() {
 		
 	}

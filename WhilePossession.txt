@@ -1,0 +1,8 @@
+List of things to do while in 'Possession':
+
+Keep players loaded in target bodies
+Send new players to target bodies
+When sending a player, find target body and set EntityPossess model and skin to the model and skin of the target
+Make sure that the player can control EntityPossess with the same keys they use for EntityPlayer
+If player is sent to another player's body, delete the targeted players body and map the username of the player to a canReturnToBody statement to false
+If end of night cycle (NOT: if Daytime, will cause issue if player goes to bed during daytime), try to return players
