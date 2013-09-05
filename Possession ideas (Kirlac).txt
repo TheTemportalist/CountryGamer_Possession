@@ -1,0 +1,30 @@
+I know this isn't exactly in line with the existing ideas for this mod, but this is how I envisioned it.
+
+On sleep event (can happen at any time)
+	If shift+right-click into bed (or maybe using a special item?).
+		Prevent sleep. *I have it working up to this point. It currently sends back a message saying "playername is having an out of body experience"
+		Spawn new uninhabited player (extended EntityPlayer?).
+		Make uninhabited player sleep in bed.
+		Put player into pseudo creative mode (transparent?, no health/hunger, no aggro, flight?, no block breaking, no inventory).
+	using a bed as normal should still be entirely compatible with this method of doing things.
+	
+Player is then able to freely roam as a spirit.
+
+When player attacks an npc or uninhabited player (or any entity?)
+	Other entity is removed from the world.
+	Player morphs into the skin of other entity.
+	Bond strength timer starts so the bond strengthens with. 
+	Player gains other entity's attributes (health, strength, inventory - zombies have 1 inv slot + armour etc.).
+	Player can stay in possession as long as they want, but the chance of a graceful exit gets less with time. Any longer than the length of one full day/night cycle (in case time is somehow changed) removes any chance of a graceful exit.
+	Player can only be a spirit for a total time of one day/night cycle per life. When that time expires, the player dies.
+	Player must repossess their own body the same way to return.
+	If players body is currently possessed they can not return without their body being evacuated, either by choice or death.
+	Players can be exorcised and forced out of a possessed body by an unpossessed player with a special item.
+	
+On graceful exit
+	Player becomes a spirit again.
+	Entity is respawned at the current location.
+	
+On death
+	Player respawns at world spawn as a spirit and must find their body again to reinhabit it.
+	If possessing someone elses body, that body respawns at the bed it was asleep in when possessed. The body's inventory will be dropped at the death point as usual.
