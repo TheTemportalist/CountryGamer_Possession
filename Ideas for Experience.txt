@@ -1,0 +1,25 @@
+To start mod:
+	Debug item click
+	Player lays in bed at any time
+	Night starts (forced)
+
+On entrance:
+	Player set to entity based on level
+
+Levels:
+	Level 1:
+	Player sent to random Tier1 Mob
+	Level 2:
+	Player sent to random Tier2 Mob
+	Optional entrance (bed usage for entrance, no night force entrance)
+	Level 3:
+	Player sent to Spirit mode with Tier1 Mobs
+	Level 4:
+	Player sent to Spirit mode with Tier2 Mobs
+	Level 5:
+	Player sent to Spirit mode with Tier3 Mobs
+	Level 6:
+	Player can unpossess and repossess from entity to  entity
+	Level 7+:
+	Player has increasing easier time possessing entities and lasting longer out of body
+
