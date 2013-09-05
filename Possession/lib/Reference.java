@@ -1,4 +1,4 @@
-package CountryGamer_Possession.Possession.lib;
+package mods.CountryGamer_Possession.Possession.lib;
 
 public class Reference {
 	

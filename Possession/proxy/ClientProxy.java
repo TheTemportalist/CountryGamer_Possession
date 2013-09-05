@@ -1,7 +1,7 @@
-package CountryGamer_Possession.Possession.proxy;
+package mods.CountryGamer_Possession.Possession.proxy;
 
-import CountryGamer_Possession.Possession.Client.Render.Entity.RenderPossesed;
-import CountryGamer_Possession.Possession.Entity.EntityPossesed;
+import mods.CountryGamer_Possession.Possession.Client.Render.Entity.RenderPossesed;
+import mods.CountryGamer_Possession.Possession.Entity.EntityPossesed;
 import cpw.mods.fml.client.registry.RenderingRegistry;
 
 

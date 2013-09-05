@@ -1,13 +1,13 @@
-package CountryGamer_Possession.Possession;
+package mods.CountryGamer_Possession.Possession;
 
 import java.util.ArrayList;
 
+import mods.CountryGamer_Possession.Possession.Util.EnumAbilities;
 import net.minecraft.client.model.ModelBase;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.EnumCreatureAttribute;
 import net.minecraft.entity.SharedMonsterAttributes;
 import net.minecraft.util.ResourceLocation;
-import CountryGamer_Possession.Possession.Util.EnumAbilities;
 
 public class helper { //TODO Needs more accurate Name and to be put into the correct package
 	

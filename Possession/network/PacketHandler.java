@@ -1,8 +1,8 @@
-package CountryGamer_Possession.Possession.network;
+package mods.CountryGamer_Possession.Possession.network;
 
+import mods.CountryGamer_Possession.Possession.network.packet.PacketPion;
 import net.minecraft.network.INetworkManager;
 import net.minecraft.network.packet.Packet250CustomPayload;
-import CountryGamer_Possession.Possession.network.packet.PacketPion;
 import cpw.mods.fml.common.network.IPacketHandler;
 import cpw.mods.fml.common.network.Player;
 

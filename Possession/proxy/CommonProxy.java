@@ -1,6 +1,6 @@
-package CountryGamer_Possession.Possession.proxy;
+package mods.CountryGamer_Possession.Possession.proxy;
 
-import CountryGamer_Possession.Possession.PossessionServerTickHandler;
+import mods.CountryGamer_Possession.Possession.PossessionServerTickHandler;
 import cpw.mods.fml.common.registry.TickRegistry;
 import cpw.mods.fml.relauncher.Side;
 

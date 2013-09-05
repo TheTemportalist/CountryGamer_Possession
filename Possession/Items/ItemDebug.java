@@ -1,4 +1,4 @@
-package CountryGamer_Possession.Possession.Items;
+package mods.CountryGamer_Possession.Possession.Items;
 
 import java.util.List;
 
@@ -10,11 +10,10 @@ import net.minecraft.entity.monster.EntityIronGolem;
 import net.minecraft.entity.monster.EntityMob;
 import net.minecraft.entity.monster.EntitySnowman;
 import net.minecraft.entity.player.EntityPlayer;
-import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.world.World;
 
-public class ItemDebug extends Item{
+public class ItemDebug extends ItemBase {
 
 	public ItemDebug(int id) {
 		super(id);

@@ -1,4 +1,4 @@
-package CountryGamer_Possession.Possession.Client.Render.Entity;
+package mods.CountryGamer_Possession.Possession.Client.Render.Entity;
 
 import net.minecraft.client.model.ModelBase;
 import net.minecraft.client.model.ModelCow;
@@ -31,7 +31,8 @@ public class RenderPossesed extends RenderLiving {
 	}
 
 	@Override
-	protected ResourceLocation getEntityTexture(Entity entity) {
+	protected ResourceLocation func_110775_a(Entity entity) {
 		return texture;
 	}
+	
 }

@@ -1,12 +1,12 @@
-package CountryGamer_Possession.Possession;
+package mods.CountryGamer_Possession.Possession;
 
+import mods.CountryGamer_Possession.Possession.Entity.EntityPossesed;
+import mods.CountryGamer_Possession.Possession.Items.ItemDebug;
+import mods.CountryGamer_Possession.Possession.lib.Reference;
+import mods.CountryGamer_Possession.Possession.network.PacketHandler;
+import mods.CountryGamer_Possession.Possession.proxy.CommonProxy;
 import net.minecraft.item.Item;
 import net.minecraftforge.common.Configuration;
-import CountryGamer_Possession.Possession.Entity.EntityPossesed;
-import CountryGamer_Possession.Possession.Items.ItemDebug;
-import CountryGamer_Possession.Possession.lib.Reference;
-import CountryGamer_Possession.Possession.network.PacketHandler;
-import CountryGamer_Possession.Possession.proxy.CommonProxy;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.Mod.EventHandler;
 import cpw.mods.fml.common.Mod.Instance;

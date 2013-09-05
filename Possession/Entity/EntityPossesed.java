@@ -1,4 +1,4 @@
-package CountryGamer_Possession.Possession.Entity;
+package mods.CountryGamer_Possession.Possession.Entity;
 
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityCreature;

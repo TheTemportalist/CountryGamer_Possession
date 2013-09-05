@@ -1,15 +1,15 @@
-package CountryGamer_Possession.Possession.network;
+package mods.CountryGamer_Possession.Possession.network;
 
 import java.io.ByteArrayInputStream;
 import java.io.DataInputStream;
 
+import mods.CountryGamer_Possession.Possession.lib.Reference;
+import mods.CountryGamer_Possession.Possession.network.packet.PacketPion;
 import net.minecraft.network.packet.Packet;
 import net.minecraft.network.packet.Packet250CustomPayload;
-import CountryGamer_Possession.Possession.lib.Reference;
-import CountryGamer_Possession.Possession.network.packet.PacketPion;
 
 public enum PacketTypeHandler {
-    KEY(PacketKeyPressed.class) //TODO work on key bindings and packets
+    ;//KEY(PacketKeyPressed.class); //TODO work on key bindings and packets
 
     private Class<? extends PacketPion> clazz;
 
