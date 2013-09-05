@@ -1,4 +1,4 @@
-package mods.CountryGamer_Possession.Server;
+package CountryGamer_Possession.Possession;
 
 import java.util.ArrayList;
 
@@ -6,10 +6,10 @@ import net.minecraft.client.model.ModelBase;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.EnumCreatureAttribute;
 import net.minecraft.entity.SharedMonsterAttributes;
-import net.minecraft.entity.monster.EntityMob;
 import net.minecraft.util.ResourceLocation;
+import CountryGamer_Possession.Possession.Util.EnumAbilities;
 
-public class Possession {
+public class helper { //TODO Needs more accurate Name and to be put into the correct package
 	
 	/*
 	 * Order of calling:

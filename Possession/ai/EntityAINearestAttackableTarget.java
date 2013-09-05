@@ -1,4 +1,4 @@
-package mods.CountryGamer_Possession.Server.ai;
+package CountryGamer_Possession.Possession.ai;
 
 import java.util.Collections;
 import java.util.List;
@@ -9,6 +9,8 @@ import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.ai.EntityAINearestAttackableTargetSorter;
 import net.minecraft.entity.ai.EntityAITarget;
 import net.minecraft.entity.player.EntityPlayer;
+
+//I don't know what these are here for so Ill leave them in for now )this includes all three AI classes
 
 public class EntityAINearestAttackableTarget extends EntityAITarget
 {

@@ -1,4 +1,4 @@
-package mods.CountryGamer_Possession.Server.ai;
+package CountryGamer_Possession.Possession.ai;
 
 import net.minecraft.entity.EntityCreature;
 import net.minecraft.entity.EntityLivingBase;

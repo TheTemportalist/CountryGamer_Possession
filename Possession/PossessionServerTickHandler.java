@@ -1,4 +1,4 @@
-package mods.CountryGamer_Possession.Server;
+package CountryGamer_Possession.Possession;
 
 import java.util.EnumSet;
 

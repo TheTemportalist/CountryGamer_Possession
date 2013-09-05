@@ -1,8 +1,7 @@
-package mods.CountryGamer_Possession.Server.Items;
+package CountryGamer_Possession.Possession.Items;
 
 import java.util.List;
 
-import mods.CountryGamer_Core.ItemBase;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityLivingBase;
@@ -11,10 +10,11 @@ import net.minecraft.entity.monster.EntityIronGolem;
 import net.minecraft.entity.monster.EntityMob;
 import net.minecraft.entity.monster.EntitySnowman;
 import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.world.World;
 
-public class ItemDebug extends ItemBase {
+public class ItemDebug extends Item{
 
 	public ItemDebug(int id) {
 		super(id);
