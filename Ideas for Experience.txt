@@ -1,3 +1,5 @@
+Save crucial player data in world folder file like morph mod: https://twitter.com/Steves_Carts/status/374276378901749760
+
 To start mod:
 	Debug item click
 	Player lays in bed at any time
