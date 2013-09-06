@@ -1,25 +1,30 @@
 To start mod:
 	Debug item click
 	Player lays in bed at any time
-	Night starts (forced)
 
 On entrance:
 	Player set to entity based on level
 
-Levels:
+Levels: (Level are cumulative. Tier2=Tier1+Tier2, Tier3=Tier(1to3))
 	Level 1:
-	Player sent to random Tier1 Mob
+	Player sent to Spirit mode with Tier1 Mobs & Self
 	Level 2:
-	Player sent to random Tier2 Mob
-	Optional entrance (bed usage for entrance, no night force entrance)
-	Level 3:
-	Player sent to Spirit mode with Tier1 Mobs
-	Level 4:
 	Player sent to Spirit mode with Tier2 Mobs
-	Level 5:
+	Level 3:
 	Player sent to Spirit mode with Tier3 Mobs
-	Level 6:
-	Player can unpossess and repossess from entity to  entity
-	Level 7+:
+	Level 4:
+	Player can unpossess and repossess from entity to entity by will
+	Level 5+:
 	Player has increasing easier time possessing entities and lasting longer out of body
+	Player has increasing longer lasting allowed entity possession
 
+Spirit Mode:
+	On enter, player spawns as invisible for mostly invisible ghost-like entity.
+	Player can roam xyz coords at will
+	Player can teleport, IF has that ability (enough control of mind)
+	Player can enter an entity, if has the ability to that tier, allow, else send player a message
+
+Possess Mode:
+	On enter as spirit, Player is spawned as target entity.
+	According to mob abilities, allow player those abilities
+	After so long, player is forced back to spirit mode (length altered after lvl5)
