@@ -7,6 +7,7 @@ import net.minecraft.client.model.ModelBase;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.EnumCreatureAttribute;
 import net.minecraft.entity.SharedMonsterAttributes;
+import net.minecraft.entity.ai.attributes.AttributeModifier;
 import net.minecraft.util.ResourceLocation;
 
 public class helper { //TODO Needs more accurate Name and to be put into the correct package
@@ -23,14 +24,11 @@ public class helper { //TODO Needs more accurate Name and to be put into the cor
 	 */
 	
 	public static Object[] getTargetStats(EntityLivingBase targetEnt) {
-		float currentHealth = targetEnt.func_110143_aJ();
-		float maxHealth = targetEnt.func_110138_aP();
+		float currentHealth = targetEnt.getHealth();
+		float maxHealth = targetEnt.getMaxHealth();
 		double attackDamage = 0;
-		// Assuming that this should get the generic damage, which is
-		// overridden on a per entity basis
-		// I believe 'func_111125_b' to be able to get the value required 
-		attackDamage = targetEnt.func_110140_aT().func_111150_b(
-				SharedMonsterAttributes.field_111264_e).func_111125_b();
+		// TODO get the attack damage of the entity
+		attackDamage = 0;
 		ArrayList<EnumAbilities> abilities = null;
 		EnumCreatureAttribute creatureAttr = targetEnt.getCreatureAttribute();
 		

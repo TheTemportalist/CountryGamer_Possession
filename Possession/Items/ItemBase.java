@@ -11,7 +11,7 @@ public class ItemBase extends Item {
 		this.setCreativeTab(OceanicMain.oceanic);
 		if( this.getUnlocalizedName().equals(""))
 			this.setUnlocalizedName("genericItem");	
-		this.func_111206_d(OceanicMain.base_Tex + this.getUnlocalizedName());
+		this.setTextureName(OceanicMain.base_Tex + this.getUnlocalizedName());
 	}
 	
 	
