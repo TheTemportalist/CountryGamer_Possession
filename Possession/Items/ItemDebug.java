@@ -17,7 +17,6 @@ public class ItemDebug extends ItemBase {
 
 	public ItemDebug(int id) {
 		super(id);
-		this.setCreativeTab(CreativeTabs.tabTools);
 	}
 	
 	public boolean onItemUse(ItemStack itemStack, EntityPlayer player,

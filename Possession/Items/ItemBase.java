@@ -10,13 +10,15 @@ public class ItemBase extends Item {
 
 	public ItemBase(int id) {
 		super(id);
+		if( this.getUnlocalizedName().equals(""))
+			this.setUnlocalizedName("genericItem");
 		this.setCreativeTab(PosMain.tabsPion);
 	}
 
 	@Override
 	@SideOnly(Side.CLIENT)
 	public void registerIcons(IconRegister iconRegister) {
-		itemIcon = iconRegister.registerIcon(this.getUnlocalizedName().substring(this.getUnlocalizedName().indexOf(".") + 1));
+		this.itemIcon = iconRegister.registerIcon(this.getUnlocalizedName().substring(this.getUnlocalizedName().indexOf(".") + 1));
 	}
 
 	
