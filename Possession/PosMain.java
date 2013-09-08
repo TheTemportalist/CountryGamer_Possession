@@ -5,6 +5,7 @@ import mods.CountryGamer_Possession.Possession.Items.ItemDebug;
 import mods.CountryGamer_Possession.Possession.lib.Reference;
 import mods.CountryGamer_Possession.Possession.network.PacketHandler;
 import mods.CountryGamer_Possession.Possession.proxy.CommonProxy;
+import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 import net.minecraftforge.common.Configuration;
 import cpw.mods.fml.common.Mod;
@@ -16,6 +17,7 @@ import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import cpw.mods.fml.common.network.NetworkMod;
 import cpw.mods.fml.common.registry.EntityRegistry;
+import cpw.mods.fml.common.registry.GameRegistry;
 import cpw.mods.fml.common.registry.LanguageRegistry;
 
 //Using Pion as shorthand for Possession, should probably come up with a better one
@@ -29,6 +31,8 @@ public class PosMain {
 	@SidedProxy(clientSide= Reference.CLIENT_PROXY_CLASS, serverSide= Reference.SERVER_PROXY_CLASS)
 	
 	public static CommonProxy proxy;
+	
+	public static CreativeTabs tabsPion = new creativeTabPion(CreativeTabs.getNextID(), Reference.MOD_ID);
 
 	public static final String TEXTURE_PATH = Reference.MOD_ID_LOWERCASE + ":";
 
@@ -72,6 +76,7 @@ public class PosMain {
 	
 	public void items() {
 		debugItem = new ItemDebug(debugItemID).setUnlocalizedName("debugItem");
+		GameRegistry.registerItem(debugItem, "debugItem");
 		LanguageRegistry.addName(debugItem, "Debug Item");
 	}
 	public void blocks() {
