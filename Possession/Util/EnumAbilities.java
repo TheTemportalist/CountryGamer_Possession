@@ -1,4 +1,4 @@
-package mods.CountryGamer_Possession.Possession.Util;
+package CountryGamer_Possession.Possession.Util;
 
 public enum EnumAbilities {
 	

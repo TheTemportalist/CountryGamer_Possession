@@ -1,10 +1,10 @@
-package mods.CountryGamer_Possession.Possession;
+package CountryGamer_Possession.Possession;
 
-import mods.CountryGamer_Possession.Possession.Entity.EntityPossesed;
-import mods.CountryGamer_Possession.Possession.Items.ItemDebug;
-import mods.CountryGamer_Possession.Possession.lib.Reference;
-import mods.CountryGamer_Possession.Possession.network.PacketHandler;
-import mods.CountryGamer_Possession.Possession.proxy.CommonProxy;
+import CountryGamer_Possession.Possession.Entity.EntityPossesed;
+import CountryGamer_Possession.Possession.Items.ItemDebug;
+import CountryGamer_Possession.Possession.lib.Reference;
+import CountryGamer_Possession.Possession.network.PacketHandler;
+import CountryGamer_Possession.Possession.proxy.ServerProxy;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 import net.minecraftforge.common.Configuration;
@@ -30,7 +30,7 @@ public class PosMain {
 	
 	@SidedProxy(clientSide= Reference.CLIENT_PROXY_CLASS, serverSide= Reference.SERVER_PROXY_CLASS)
 	
-	public static CommonProxy proxy;
+	public static ServerProxy proxy;
 	
 	public static CreativeTabs tabsPion = new creativeTabPion(CreativeTabs.getNextID(), Reference.MOD_ID);
 

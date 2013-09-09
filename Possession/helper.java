@@ -1,8 +1,8 @@
-package mods.CountryGamer_Possession.Possession;
+package CountryGamer_Possession.Possession;
 
 import java.util.ArrayList;
 
-import mods.CountryGamer_Possession.Possession.Util.EnumAbilities;
+import CountryGamer_Possession.Possession.Util.EnumAbilities;
 import net.minecraft.client.model.ModelBase;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.EnumCreatureAttribute;

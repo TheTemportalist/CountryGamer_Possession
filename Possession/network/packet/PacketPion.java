@@ -1,11 +1,11 @@
-package mods.CountryGamer_Possession.Possession.network.packet;
+package CountryGamer_Possession.Possession.network.packet;
 
 import java.io.ByteArrayOutputStream;
 import java.io.DataInputStream;
 import java.io.DataOutputStream;
 import java.io.IOException;
 
-import mods.CountryGamer_Possession.Possession.network.PacketTypeHandler;
+import CountryGamer_Possession.Possession.network.PacketTypeHandler;
 import net.minecraft.network.INetworkManager;
 import cpw.mods.fml.common.network.Player;
 

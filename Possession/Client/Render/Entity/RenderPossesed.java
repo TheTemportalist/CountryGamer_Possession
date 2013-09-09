@@ -1,4 +1,4 @@
-package mods.CountryGamer_Possession.Possession.Client.Render.Entity;
+package CountryGamer_Possession.Possession.Client.Render.Entity;
 
 import net.minecraft.client.model.ModelBase;
 import net.minecraft.client.model.ModelCow;

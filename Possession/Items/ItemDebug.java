@@ -1,4 +1,4 @@
-package mods.CountryGamer_Possession.Possession.Items;
+package CountryGamer_Possession.Possession.Items;
 
 import java.util.List;
 

@@ -1,11 +1,11 @@
-package mods.CountryGamer_Possession.Possession.proxy;
+package CountryGamer_Possession.Possession.proxy;
 
-import mods.CountryGamer_Possession.Possession.Client.Render.Entity.RenderPossesed;
-import mods.CountryGamer_Possession.Possession.Entity.EntityPossesed;
+import CountryGamer_Possession.Possession.Client.Render.Entity.RenderPossesed;
+import CountryGamer_Possession.Possession.Entity.EntityPossesed;
 import cpw.mods.fml.client.registry.RenderingRegistry;
 
 
-public class ClientProxy extends CommonProxy {
+public class ClientProxy extends ServerProxy {
 	
 	@Override
 	public void rendering(){
