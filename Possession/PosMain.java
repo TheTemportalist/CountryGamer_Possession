@@ -1,13 +1,14 @@
 package CountryGamer_Possession.Possession;
 
-import CountryGamer_Possession.Possession.Entity.EntityPossesed;
-import CountryGamer_Possession.Possession.Items.ItemDebug;
-import CountryGamer_Possession.Possession.lib.Reference;
-import CountryGamer_Possession.Possession.network.PacketHandler;
-import CountryGamer_Possession.Possession.proxy.ServerProxy;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 import net.minecraftforge.common.Configuration;
+import CountryGamer_Possession.Possession.Entity.EntityPossesed;
+import CountryGamer_Possession.Possession.Items.ItemDebug;
+import CountryGamer_Possession.Possession.Util.ObfHelper;
+import CountryGamer_Possession.Possession.lib.Reference;
+import CountryGamer_Possession.Possession.network.PacketHandler;
+import CountryGamer_Possession.Possession.proxy.ServerProxy;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.Mod.EventHandler;
 import cpw.mods.fml.common.Mod.Instance;
@@ -54,12 +55,14 @@ public class PosMain {
 		debugItemID	= config.get(itemCate, "Debug Item", 1000).getInt();
 
 		config.save();
+		
+		ObfHelper.detectObfuscation();
 
 	}
 	@EventHandler
 	public void init(FMLInitializationEvent event) {
 		
-		proxy.registerHandler();
+		proxy.registerTickHandler();
 		proxy.rendering();
 		
 		items();
