@@ -55,6 +55,9 @@ public class PosMain {
 		debugItemID	= config.get(itemCate, "Debug Item", 1000).getInt();
 
 		config.save();
+        
+        //Attach event handlers.
+        MinecraftForge.EVENT_BUS.register(new CountryGamer_Possession.Possession.EventHandler());
 		
 		ObfHelper.detectObfuscation();
 
