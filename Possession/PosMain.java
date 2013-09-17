@@ -3,6 +3,7 @@ package CountryGamer_Possession.Possession;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 import net.minecraftforge.common.Configuration;
+import net.minecraftforge.common.MinecraftForge;
 import CountryGamer_Possession.Possession.Entity.EntityPossesed;
 import CountryGamer_Possession.Possession.Items.ItemDebug;
 import CountryGamer_Possession.Possession.Util.ObfHelper;
@@ -57,7 +58,7 @@ public class PosMain {
 		config.save();
         
         //Attach event handlers.
-        MinecraftForge.EVENT_BUS.register(new CountryGamer_Possession.Possession.EventHandler());
+        MinecraftForge.EVENT_BUS.register(new CountryGamer_Possession.Possession.handlers.EventHandler());
 		
 		ObfHelper.detectObfuscation();
 
