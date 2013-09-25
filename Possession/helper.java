@@ -2,14 +2,17 @@ package CountryGamer_Possession.Possession;
 
 import java.util.ArrayList;
 
-import CountryGamer_Possession.Possession.Util.EnumAbilities;
 import net.minecraft.client.model.ModelBase;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.EnumCreatureAttribute;
-import net.minecraft.entity.SharedMonsterAttributes;
-import net.minecraft.entity.ai.attributes.AttributeModifier;
 import net.minecraft.util.ResourceLocation;
+import CountryGamer_Possession.Possession.Util.EnumAbility;
 
+/**
+ * 
+ * @author Country_Gamer
+ *
+ */
 public class helper { //TODO Needs more accurate Name and to be put into the correct package
 	
 	/*
@@ -29,7 +32,7 @@ public class helper { //TODO Needs more accurate Name and to be put into the cor
 		double attackDamage = 0;
 		// TODO get the attack damage of the entity
 		attackDamage = 0;
-		ArrayList<EnumAbilities> abilities = null;
+		ArrayList<EnumAbility> abilities = null;
 		EnumCreatureAttribute creatureAttr = targetEnt.getCreatureAttribute();
 		
 		Object[] statArray = new Object[] {
