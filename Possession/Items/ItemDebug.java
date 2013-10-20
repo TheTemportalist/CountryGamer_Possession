@@ -1,14 +1,9 @@
 package CountryGamer_Possession.Possession.Items;
 
-import java.util.List;
-
-import net.minecraft.client.Minecraft;
-import net.minecraft.entity.Entity;
-import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.entity.player.EntityPlayerMP;
 import net.minecraft.item.ItemStack;
 import net.minecraft.world.World;
-import CountryGamer_Possession.Possession.Entity.EntityPossesed;
 
 public class ItemDebug extends ItemBase {
 
@@ -17,8 +12,12 @@ public class ItemDebug extends ItemBase {
 	}
 
 	public ItemStack onItemRightClick(ItemStack itemStack, World world,EntityPlayer player) {
-
 		if( world.isRemote )return itemStack;
+		
+		  world.spawnEntityInWorld(new EntityPlayerMP());
+		  return itemStack;
+		
+		/**
 		player.addChatMessage("Enter Possession Mode");
 
 		EntityLivingBase mob = null;

@@ -6,7 +6,6 @@ import net.minecraftforge.common.Configuration;
 import net.minecraftforge.common.MinecraftForge;
 import CountryGamer_Possession.Possession.Entity.EntityPossesed;
 import CountryGamer_Possession.Possession.Items.ItemDebug;
-import CountryGamer_Possession.Possession.Util.ObfHelper;
 import CountryGamer_Possession.Possession.lib.Reference;
 import CountryGamer_Possession.Possession.network.PacketHandler;
 import CountryGamer_Possession.Possession.proxy.ServerProxy;
@@ -59,21 +58,18 @@ public class PosMain {
         
         //Attach event handlers.
         MinecraftForge.EVENT_BUS.register(new CountryGamer_Possession.Possession.handlers.EventHandler());
-		
-		ObfHelper.detectObfuscation();
+
 
 	}
 	@EventHandler
 	public void init(FMLInitializationEvent event) {
 		
-		proxy.registerTickHandler();
 		proxy.rendering();
 		
 		items();
 		blocks();
 		entitys();
 		
-
 	}
 	@EventHandler
 	public void postInit(FMLPostInitializationEvent event) {
